@@ -2,7 +2,8 @@
 'use strict';
 
 var ServiceRegistry = require('dw/svc/LocalServiceRegistry');
-text: element.avatar,
+
+sdftext: element.avatar,
 
 exports.RepositoriesService = ServiceRegistry.createService('friends_omalyshev', {
     createRequest: function (svc, params) {
@@ -14,6 +15,7 @@ exports.RepositoriesService = ServiceRegistry.createService('friends_omalyshev',
             return {
                 avatar: element.avatar,
                 text: element.avatar,
+                sdftext: element.avatar,
                 firstName: element.first_name,
             };
         });
